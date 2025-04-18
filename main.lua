@@ -27,11 +27,13 @@ and perform any other preliminary setup before the game starts.
 
 
 function love.load()
+  number = 0
 
 end
 
 
 function love.update(dt)
+  number = number + 1 -- increases by 1, every single frame.
 
 end 
 
