@@ -23,6 +23,9 @@ and perform any other preliminary setup before the game starts.
 
 
 
+
+
+
 function love.load()
 
 end
@@ -33,5 +36,5 @@ function love.update(dt)
 end 
 
 function love.draw()
-  
+
 end
