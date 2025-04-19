@@ -21,23 +21,15 @@ and perform any other preliminary setup before the game starts.
 
 ]] 
 
-
-
-
-
-
 function love.load()
-  number = 0
 
 end
 
 
 function love.update(dt)
-  number = number + 1 -- increases by 1, every single frame.
 
 end 
 
 function love.draw()
-  love.graphics.print(number)
-
+  love.graphics.rectangle("fill", 0, 0, 100, 100) -- filled rectangle demonstration. 
 end
