@@ -31,6 +31,6 @@ function love.update(dt)
 end 
 
 function love.draw()
-  love.graphics.rectangle("line", 0, 0, 170, 150) -- outlined rectangle demonstration.
+  love.graphics.rectangle("line", 200, 400, 170, 140) -- outlined rectangle demonstration.
   -- love.graphics.rectangle("fill", 0, 0, 100, 100) -- filled rectangle demonstration. 
 end
