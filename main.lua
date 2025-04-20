@@ -31,7 +31,7 @@ function love.load()
   timer = 0
 
 
-  gameFont = love.graphics.newFont(40)
+  gameFont = love.graphics.newFont(30)
 end
 
 function love.update(dt)
