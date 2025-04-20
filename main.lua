@@ -38,4 +38,6 @@ end
 function love.draw()
   love.graphics.setColor(0.5, 0.2, 1)
   love.graphics.circle("fill", target.x, target.y, target.radius)
+  love.graphics.setColor(1, 1, 1) -- score color will be white.
+  love.graphics.print(score, 0, 0)
 end
