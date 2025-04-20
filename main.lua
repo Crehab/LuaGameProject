@@ -26,6 +26,9 @@ function love.load()
   target.x = 400
   target.y = 250
   target.radius = 50
+
+  score = 0
+  timer = 0
 end
 
 function love.update(dt)
