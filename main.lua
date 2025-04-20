@@ -22,7 +22,10 @@ and perform any other preliminary setup before the game starts.
 ]]
 
 function love.load()
-
+  target = {} -- enpty table, main circle target
+  target.x = 0
+  target.y = 0
+  target.radius = 50
 end
 
 function love.update(dt)
@@ -30,9 +33,5 @@ function love.update(dt)
 end
 
 function love.draw()
-  love.graphics.setColor(1, 0, 1)
-  love.graphics.rectangle("line", 315, 100, 170, 140) -- outlined rectangle demonstration.
-  -- love.graphics.rectangle("fill", 0, 0, 100, 100) -- filled rectangle demonstration
-  love.graphics.setColor(1, 1, 0)
-  love.graphics.circle("fill", 400, 100, 50)
+  love.graphics.circle("fill", target.x, target.y, target.radius)
 end
