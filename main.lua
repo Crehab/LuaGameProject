@@ -1,7 +1,7 @@
 --[[ 3 Functions that makes the Game Work are :-
-1. love.load() 
+1. love.load()
 - Runs when the Game starts.
-- uses the features of Love2d game engine. 
+- uses the features of Love2d game engine.
 - we are going to specify global variables, adjust the window sides
 and perform any other preliminary setup before the game starts.
 
@@ -14,26 +14,25 @@ and perform any other preliminary setup before the game starts.
 
 3. love.Draw()
 - used for Drawing Graphics to the screen,
-- anything that the player sees on the screen is the result of the code 
-- that we write inside the scope of this function. 
+- anything that the player sees on the screen is the result of the code
+- that we write inside the scope of this function.
 - similary to love.upddate, because it runs every single frame as well
 - no declaration of variables or calculations to do here, only graphics & images work is done.
 
-]] 
+]]
 
 function love.load()
 
 end
 
-
 function love.update(dt)
 
-end 
+end
 
 function love.draw()
   love.graphics.setColor(1, 0, 1)
   love.graphics.rectangle("line", 315, 100, 170, 140) -- outlined rectangle demonstration.
   -- love.graphics.rectangle("fill", 0, 0, 100, 100) -- filled rectangle demonstration
   love.graphics.setColor(1, 1, 0)
-  love.graphics.circle("fill", 400, 100, 50, 50) 
+  love.graphics.circle("fill", 400, 100, 50)
 end
