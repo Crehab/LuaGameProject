@@ -7,7 +7,7 @@ and perform any other preliminary setup before the game starts.
 
 2. love.update(dt)
 - holds a parameter called "dt"
-- this function updates the game loop means,
+- this function updates the game loop, means,
 - this function will be called every frame when the game is running
 - by default games that are created using Love2d runs on 60FPS
 - means code inside the function love.update will be running 60 times every second.
@@ -16,7 +16,7 @@ and perform any other preliminary setup before the game starts.
 - used for Drawing Graphics to the screen,
 - anything that the player sees on the screen is the result of the code
 - that we write inside the scope of this function.
-- similary to love.upddate, because it runs every single frame as well
+- similar to love.update, because it runs every single frame as well
 - no declaration of variables or calculations to do here, only graphics & images work is done.
 
 ]]
