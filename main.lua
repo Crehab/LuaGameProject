@@ -22,16 +22,16 @@ and perform any other preliminary setup before the game starts.
 ]]
 
 function love.load()
-  target = {} -- enpty table, main circle target
-  target.x = 400
-  target.y = 250
-  target.radius = 50
+    target = {} -- enpty table, main circle target
+    target.x = 400
+    target.y = 250
+    target.radius = 50
 
-  score = 0
-  timer = 0
+    score = 0
+    timer = 0
 
 
-  gameFont = love.graphics.newFont(30)
+    gameFont = love.graphics.newFont(30) -- declaring the font size of score.
 end
 
 function love.update(dt)
@@ -39,12 +39,12 @@ function love.update(dt)
 end
 
 function love.draw()
-  love.graphics.setColor(0.5, 0.2, 1)
-  love.graphics.circle("fill", target.x, target.y, target.radius)
+    love.graphics.setColor(0.5, 0.2, 1)
+    love.graphics.circle("fill", target.x, target.y, target.radius)
 
-  love.graphics.setColor(1, 1, 1) -- score color will be white.
-  love.graphics.setFont(gameFont)
-  love.graphics.print(score, 0, 0)
+    love.graphics.setColor(1, 1, 1) -- score color will be white.
+    love.graphics.setFont(gameFont)
+    love.graphics.print(score, 0, 0)
 end
 
 function love.mousepressed(x, y, button, istouch, presses)
