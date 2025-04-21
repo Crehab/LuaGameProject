@@ -28,7 +28,7 @@ function love.load()
     target.radius = 50
 
     score = 0
-    timer = 0
+
 
     gameFont = love.graphics.newFont(30) -- declaring the font size of score.
 end
@@ -51,6 +51,9 @@ function love.mousepressed(x, y, button, istouch, presses)
         local mouseToTarget = distanceBetween(x, y, target.x, target.y)
         if mouseToTarget < target.radius then
             score = score + 1 -- score increases if the player clicks with mouse button 1, anywhere on the screen.
+            -- circle randomly changes its position, when clicked.
+            target.x = math.random(target.radius, love.graphics.getWidth() - target.radius)
+            target.y = math.random(target.radius, love.graphics.getHeight() - target.radius)
         end
     end
 end
