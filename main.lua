@@ -47,9 +47,11 @@ function love.draw()
 end
 
 function love.mousepressed(x, y, button, istouch, presses)
-    if button == 1 then   -- 1 reprents mouse button 1
+    if button == 1 then -- 1 reprents mouse button 1
         local mouseToTarget = distanceBetween(x, y, target.x, target.y)
-        score = score + 1 -- score increases if the player clicks with mouse button 1, anywhere on the screen.
+        if mouseToTarget < target.radius then
+            score = score + 1 -- score increases if the player clicks with mouse button 1, anywhere on the screen.
+        end
     end
 end
 
