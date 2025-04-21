@@ -30,7 +30,6 @@ function love.load()
     score = 0
     timer = 0
 
-
     gameFont = love.graphics.newFont(30) -- declaring the font size of score.
 end
 
@@ -48,5 +47,7 @@ function love.draw()
 end
 
 function love.mousepressed(x, y, button, istouch, presses)
-
+    if button == 1 then
+        score = score + 1
+    end
 end
